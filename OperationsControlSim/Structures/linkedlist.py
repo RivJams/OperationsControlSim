@@ -68,7 +68,7 @@ class LinkedList: # This is where the orders will be held after the fact
            temp = temp.next
         print("None")
     
-    def iter(self):
+    def iter(self): # This is incomplete
 
 
         pass
@@ -87,3 +87,4 @@ linked_list.remove_first_with_id(30)
 print(linked_list.find(40))
 linked_list.print_list()
 #linked_list.iter()
+
