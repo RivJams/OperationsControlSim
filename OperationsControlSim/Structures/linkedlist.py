@@ -3,7 +3,6 @@ class Node: # Need this for the list
         id.desc = desc
         id.next = None
 
-
 class LinkedList: # This is where the orders will be held after the fact
 
     def __init__(self):
@@ -52,7 +51,6 @@ class LinkedList: # This is where the orders will be held after the fact
             print(f"{key} not found in the list.")
             return 
 
-    
     def insert_after_node(self, prev_node, new_data): # This will insert a new node after node given ; verified work
         if prev_node is None:
             print("The given previous node must be in the list.")
@@ -67,12 +65,6 @@ class LinkedList: # This is where the orders will be held after the fact
            print(temp.desc, end=" -> ")
            temp = temp.next
         print("None")
-    
-    def iter(self): # This is incomplete
-
-
-        pass
-
 
 linked_list = LinkedList()
 linked_list.append(10)
@@ -86,5 +78,3 @@ linked_list.append(5)
 linked_list.remove_first_with_id(30)
 print(linked_list.find(40))
 linked_list.print_list()
-#linked_list.iter()
-
