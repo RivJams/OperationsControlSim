@@ -21,7 +21,20 @@ def main():
     event_queue.dequeue()
 
     stackTest = Stack()
-    lltest = LinkedList()
+
+    linked_list = LinkedList()
+    linked_list.append(10)
+    linked_list.append(20)
+    linked_list.append(30)
+    linked_list.append(40)
+    linked_list.insert_after_node(linked_list.head, 15)
+    linked_list.insert_after_node(linked_list.head.next, 50)
+    linked_list.insert_after_node(linked_list.head.next.next.next.next.next, 55)
+    linked_list.append(5)
+    linked_list.remove_first_with_id(30)
+    print(linked_list.find(40))
+    
+    linked_list.print_list()
 
 if __name__ == "__main__":
     main()
