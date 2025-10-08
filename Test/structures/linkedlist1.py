@@ -58,3 +58,10 @@ class LinkedList: # This is where the orders will be held after the fact
         new_node = Node(new_data)
         new_node.next = prev_node.next
         prev_node.next = new_node
+
+    def print_list(self): # this is just for testing purposes
+        temp = self.head
+        while temp:
+            print(temp.desc, end=" -> ")
+            temp = temp.next
+        print("None")
