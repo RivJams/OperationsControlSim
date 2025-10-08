@@ -1,5 +1,5 @@
 <h1>Operations Control Simulator</h1>
-<hr>
+<br>
   <h2>Goals</h2>
     <p>Simulate a airport getting changes that are then kept up with on three data structures.</p>
     <hr>
