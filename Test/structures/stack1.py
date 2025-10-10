@@ -7,9 +7,9 @@ class Stack:
     def __init__(self):
         self._items = []
 
-    def push(self, item):
+    def push(self, operation, event):
         #Push an item onto the stack.
-        self._items.append(item)
+        self._items.append((operation, event))
 
     def pop(self):
         #Remove and return the most-recent item, or None if empty.
