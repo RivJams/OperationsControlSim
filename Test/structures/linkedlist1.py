@@ -1,7 +1,7 @@
 class Node: # Need this for the list
-    def __init__(id, desc):
-        id.desc = desc
-        id.next = None
+    def __init__(self, desc):
+        self.desc = desc
+        self.next = None
 
 class LinkedList: # This is where the orders will be held after the fact
 
